@@ -7,9 +7,9 @@
 
 import Foundation
 
-class EmojiMemoryGame {
+class EmojiMemoryGame: ObservableObject {
     
-    var model: MemoryGame<String> = MemoryGame<String>.createMemoryGame()
+    @Published private var model: MemoryGame<String> = MemoryGame<String>.createMemoryGame()
         
     //MARK:- Access to the model
     

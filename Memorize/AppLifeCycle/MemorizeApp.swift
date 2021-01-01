@@ -24,7 +24,7 @@ struct MemorizeApp: App {
         .onChange(of: scenePhase) { phase in
             switch phase {
             case .active:
-                print("Acitive")
+                print("Active")
             case .background:
                 print("background")
             case .inactive:

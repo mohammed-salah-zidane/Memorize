@@ -14,4 +14,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         print("hello from appDelegate")
         return true
     }
+    
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        let config = UISceneConfiguration(name: "SceneDelegate", sessionRole: connectingSceneSession.role)
+        return config
+    }
 }
